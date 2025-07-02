@@ -1,0 +1,349 @@
+.container {
+  margin: 0 auto;
+  background: #fafbfc;
+  min-height: 100vh;
+}
+
+/* FindContractJobs Header */
+.header {
+  padding: 32px 0 0 0;
+  text-align: center;
+  background: #fafbfc;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logo span {
+  color: #007456;
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoCircles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  width: 24px;
+  height: 24px;
+}
+
+.logoCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #007456;
+}
+
+.logoCircle:nth-child(1) { background: #007456; }
+.logoCircle:nth-child(2) { background: #00a86b; }
+.logoCircle:nth-child(3) { background: #222; }
+.logoCircle:nth-child(4) { background: #007456; }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+/* Job Header - Green Background */
+.jobHeader {
+  background: #00745A;
+  color: white;
+  padding: 40px 0;
+  margin: 32px auto 0 auto;
+  max-width: 1200px;
+}
+
+.jobHeaderContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.jobMainInfo {
+  flex: 1;
+}
+
+.jobTitle {
+  font-family: Inter, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: white;
+  line-height: 1.2;
+}
+
+.jobCategory {
+  font-family: Inter, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 0 4px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.jobLocation {
+  font-family: Inter, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.jobMetaInfo {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.salary {
+  font-family: Inter, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.jobTypeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.jobType {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.contractType {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* Job Content - White Background */
+.jobContent {
+  background: white;
+  padding: 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.jobDescription {
+  margin-bottom: 40px;
+}
+
+.descriptionSection {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.descriptionText {
+  font-family: Inter, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.descriptionText ul {
+  margin: 16px 0;
+  padding-left: 20px;
+}
+
+.descriptionText li {
+  margin-bottom: 8px;
+}
+
+.descriptionText p {
+  margin: 16px 0;
+}
+
+.descriptionText p:first-child {
+  margin-top: 0;
+}
+
+.descriptionText p:last-child {
+  margin-bottom: 0;
+}
+
+/* Job Footer */
+.jobFooter {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.recruitmentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.jobMeta {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.jobReference,
+.jobViews {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.label {
+  font-family: Inter, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.agency {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #059669;
+  text-decoration: none;
+}
+
+.agency:hover {
+  text-decoration: underline;
+}
+
+.reference,
+.views {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.9rem;
+  }
+
+  .jobHeaderContent {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .jobMetaInfo {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .jobTitle {
+    font-size: 1.5rem;
+  }
+
+  .salary {
+    font-size: 1.2rem;
+  }
+
+  .jobContent {
+    padding: 24px 16px;
+  }
+
+  .jobFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .jobMeta {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .jobReference,
+  .jobViews {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 0 0 0;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    gap: 8px;
+  }
+
+  .logoCircles {
+    width: 18px;
+    height: 18px;
+  }
+
+  .logoCircle {
+    width: 7px;
+    height: 7px;
+  }
+
+  .jobHeader {
+    padding: 24px 0;
+  }
+
+  .jobHeaderContent {
+    padding: 0 16px;
+  }
+
+  .jobTitle {
+    font-size: 1.3rem;
+  }
+
+  .jobMeta {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
+  }
+} 

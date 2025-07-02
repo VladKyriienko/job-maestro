@@ -1,0 +1,150 @@
+/* New styles for updated structure */
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.item {
+  background: #f1f5f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 16px;
+  position: relative;
+}
+
+.itemTitle {
+  font-weight: 700;
+  color: #007456;
+  font-size: 1.1rem;
+  margin: 0;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.itemDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+}
+
+.itemRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.itemRow strong {
+  color: #374151;
+  min-width: 100px;
+  font-size: 0.8rem;
+}
+
+.itemDescription {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e2e8f0;
+  grid-column: 1 / -1;
+}
+
+.itemDescription strong {
+  color: #374151;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+
+.itemDescription div {
+  color: #64748b;
+  line-height: 1.4;
+  font-size: 0.85rem;
+  max-height: 60px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.itemDescription div p {
+  margin: 0 0 8px 0;
+}
+
+.itemDescription div p:last-child {
+  margin-bottom: 0;
+}
+
+.itemDescription div h1,
+.itemDescription div h2,
+.itemDescription div h3,
+.itemDescription div h4,
+.itemDescription div h5,
+.itemDescription div h6 {
+  color: #007456;
+  margin: 8px 0 4px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.itemDescription div ul,
+.itemDescription div ol {
+  margin: 4px 0;
+  padding-left: 16px;
+}
+
+.itemDescription div ul {
+  list-style-type: disc;
+}
+
+.itemDescription div ol {
+  list-style-type: decimal;
+}
+
+.itemDescription div li {
+  margin: 2px 0;
+  display: list-item;
+}
+
+.itemDescription div strong {
+  font-weight: 600;
+  color: #374151;
+}
+
+.itemDescription div em {
+  font-style: italic;
+}
+
+.itemDescription div u {
+  text-decoration: underline;
+}
+
+
+
+/* Status styling within itemRow */
+.itemRow .statusActive {
+  background: #dcfce7;
+  color: #166534;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.itemRow .statusInactive {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+/* Special rows that should span full width */
+.itemRow.fullWidth {
+  grid-column: 1 / -1;
+} 

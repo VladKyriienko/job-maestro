@@ -1,0 +1,32 @@
+/* Documents-specific styles */
+
+.title {
+  font-weight: 600;
+  color: #007456;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.content {
+  margin: 1rem 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.type {
+  color: #4a5568;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  color: #4a5568;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+ 

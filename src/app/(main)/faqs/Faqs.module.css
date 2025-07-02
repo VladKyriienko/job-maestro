@@ -1,0 +1,158 @@
+.pageContainer {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  background: linear-gradient(to bottom, rgba(0, 116, 86, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0px;
+  font-family: Inter, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.titleDecorator {
+  width: 280px;
+  height: auto;
+  margin: 10px auto 32px auto;
+  margin-top: -10px;
+  display: block;
+}
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faqCard {
+  background-color: rgba(0, 116, 86, 0.9);
+  border-radius: 20px;
+  padding: 40px 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faqCard:hover {
+  background-color: rgba(0, 116, 86, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.faqCard.expanded {
+  background-color: rgba(0, 116, 86, 1);
+}
+
+.faqQuestion {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  line-height: 1.4;
+}
+
+.faqAnswer {
+  margin-top: 20px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.answerText {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 32px 16px;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+  }
+
+  .titleDecorator {
+    width: 200px;
+    margin-top: -10px;
+  }
+  
+  .faqCard {
+    padding: 30px 25px;
+  }
+  
+  .faqQuestion {
+    font-size: 1.125rem;
+  }
+
+  .answerText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 24px 12px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .titleDecorator {
+    width: 160px;
+    margin-top: -7px;
+  }
+  
+  .faqCard {
+    padding: 25px 20px;
+  }
+  
+  .faqQuestion {
+    font-size: 1rem;
+  }
+
+  .answerText {
+    font-size: 0.9rem;
+  }
+} 

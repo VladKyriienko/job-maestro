@@ -1,0 +1,40 @@
+.pageContainer {
+    /* min-height: 100vh; */
+    background-color: rgba(0, 116, 86, 0.75);
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 48px 16px;
+    flex-grow: 1;
+}
+
+.content {
+    padding: 0px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: Inter, sans-serif;
+}
+
+.contentHtml {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+@media (max-width: 600px) {
+  .content {
+    padding: 16px;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+} 

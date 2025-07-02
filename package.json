@@ -1,0 +1,51 @@
+{
+  "name": "job-maestro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.50.0",
+    "@tiptap/extension-blockquote": "^2.14.0",
+    "@tiptap/extension-code": "^2.14.0",
+    "@tiptap/extension-code-block": "^2.14.0",
+    "@tiptap/extension-color": "^2.14.0",
+    "@tiptap/extension-font-size": "^3.0.0-next.3",
+    "@tiptap/extension-highlight": "^2.14.0",
+    "@tiptap/extension-horizontal-rule": "^2.14.0",
+    "@tiptap/extension-link": "^2.14.0",
+    "@tiptap/extension-subscript": "^2.14.0",
+    "@tiptap/extension-superscript": "^2.14.0",
+    "@tiptap/extension-text-align": "^2.14.0",
+    "@tiptap/extension-text-style": "^2.14.0",
+    "@tiptap/extension-underline": "^2.14.0",
+    "@tiptap/pm": "^2.14.0",
+    "@tiptap/react": "^2.14.0",
+    "@tiptap/starter-kit": "^2.14.0",
+    "next": "^15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-loader": "^10.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "string-replace-loader": "^3.2.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

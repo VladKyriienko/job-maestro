@@ -1,0 +1,140 @@
+.form {
+  width: 420px;
+  max-width: 96vw;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.header {
+  background: #21806a;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.fieldsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 32px 32px 0 32px;
+}
+
+.label {
+  color: #21806a;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input {
+  border: 1px solid #b2dfd6;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #222;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid #21806a;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #21806a;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.checkbox {
+  accent-color: #21806a;
+  width: 16px;
+  height: 16px;
+}
+
+.linksRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0 0 0;
+}
+.link {
+  color: #21806a;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: #145c4a;
+}
+
+.actionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 0 0;
+  padding: 15px 20px;
+  background: #21806a;
+  border-radius: 0 0 18px 18px;
+}
+.cancelButton {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.continueButton {
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 98vw;
+    min-width: 0;
+    border-radius: 12px;
+  }
+  .header {
+    border-radius: 12px 12px 0 0;
+    padding: 20px 10px 14px 10px;
+    font-size: 1.1rem;
+  }
+  .fieldsCol {
+    padding: 18px 10px 0 10px;
+  }
+  .actionRow {
+    margin: 18px 10px 0 10px;
+  }
+} 

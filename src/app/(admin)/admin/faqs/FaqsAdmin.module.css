@@ -1,0 +1,14 @@
+/* FAQ-specific styles */
+
+.question {
+  font-weight: 600;
+  color: #007456;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.answer {
+  color: #334155;
+}
+
+ 

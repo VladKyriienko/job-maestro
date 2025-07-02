@@ -1,0 +1,105 @@
+.adminContainer {
+  display: flex;
+  height: 100vh;
+  background: #f8fafc;
+}
+
+.mainContent {
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+}
+
+/* Common Admin Styles */
+.headerContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007456;
+}
+
+.countBadge {
+  background: #dc2626;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.addButton {
+  background: #007456;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  width: 250px;
+  margin-left: auto;
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  background: #f1f5f9;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.itemActions {
+  display: flex;
+  gap: 8px;
+}
+
+.editButton {
+  background: #ffd75e;
+  color: #007456;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.deleteButton {
+  background: #ffd75e;
+  color: #b91c1c;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+} 

@@ -1,0 +1,174 @@
+.form {
+  width: 600px;
+  max-width: 96vw;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.header {
+  background: #21806a;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  padding: 20px 20px 20px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.fieldsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 24px;
+  padding: 32px 32px 0 32px;
+}
+
+.fieldCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  color: #21806a;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input {
+  border: 1px solid #b2dfd6;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #222;
+  outline: none;
+  transition: border 0.2s;
+  max-width: 250px;
+}
+.input:focus {
+  border: 1.5px solid #21806a;
+}
+
+.uploadWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 47px;
+}
+.uploadButton {
+  background: #e6f4f1;
+  border: 1px solid #b2dfd6;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #21806a;
+  transition: background 0.2s, border 0.2s;
+}
+.uploadButton:hover {
+  background: #d2ede7;
+  border: 1.5px solid #21806a;
+}
+.uploadIcon {
+  font-size: 1.2rem;
+}
+
+.policyRow {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 32px 0 0 0;
+}
+.policyButton {
+  background: #fff;
+  color: #21806a;
+  border: 2px solid #21806a;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.policyButton:hover {
+  background: #21806a;
+  color: #fff;
+}
+
+.actionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin-top: 20px;
+  background: #21806a;
+}
+.cancelButton {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.confirmButton {
+ 
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 700px) {
+  .form {
+    width: 98vw;
+    min-width: 0;
+    border-radius: 12px;
+  }
+  .header {
+    border-radius: 12px 12px 0 0;
+    padding: 20px 10px 14px 10px;
+    font-size: 1.1rem;
+  }
+  .fieldsGrid {
+    grid-template-columns: 1fr;
+    gap: 18px 0;
+    padding: 18px 10px 0 10px;
+  }
+  .policyRow {
+    gap: 12px;
+    margin: 18px 0 0 0;
+  }
+  .actionRow {
+    margin: 18px 10px 0 10px;
+  }
+  .closeButton {
+    top: 8px;
+    right: 8px;
+    font-size: 1.5rem;
+  }
+} 

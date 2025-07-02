@@ -1,0 +1,23 @@
+/* Advice-specific styles */
+
+.title {
+  font-weight: 600;
+  color: #007456;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.subtitle {
+  color: #334155;
+  font-weight: 500;
+}
+
+.description {
+  margin: 1rem 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
